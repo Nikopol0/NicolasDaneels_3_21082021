@@ -1,0 +1,19 @@
+{
+  "name": "p3_nicolasdaneels",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000D\u0000a\u0000n\u0000e\u0000e\u0000l\u0000s\u0000_\u00003\u0000_\u00002\u00001\u00000\u00008\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000#\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000D\u0000a\u0000n\u0000e\u0000e\u0000l\u0000s\u0000_\u00003\u0000_\u00002\u00001\u00000\u00008\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000#\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000D\u0000a\u0000n\u0000e\u0000e\u0000l\u0000s\u0000_\u00003\u0000_\u00002\u00001\u00000\u00008\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/main.scss:assets/style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikopol0/NicolasDaneels_3_21082021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikopol0/NicolasDaneels_3_21082021/issues"
+  },
+  "homepage": "https://github.com/Nikopol0/NicolasDaneels_3_21082021#readme"
+}
