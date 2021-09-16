@@ -16,14 +16,16 @@ footer .footer-container a {
 }
 footer .footer-container .footer-container__title {
   color: white;
+  margin-left: 20px;
 }
 footer .footer-container .footer-container__list {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0px 0px 0px 20px;
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
+  list-style-type: none;
 }
 
 h1 {
@@ -132,40 +134,76 @@ header {
   padding: 0px 20px 0px 25px;
   color: #7e7e7e;
 }
+.nav .nav-item .nav-item__text {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
 
 .main-container {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  height: 1600px;
+  height: 1320px;
+  justify-content: flex-start;
+  margin-top: 50px;
 }
 .main-container .main__title {
-  margin: 40px 0px 0px 15px;
-  height: 3%;
+  margin: 40px 0px 20px 15px;
+  height: auto;
 }
 .main-container .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 74%;
+  height: 90%;
 }
 .main-container .cards .card {
   width: 92%;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 15px;
+  height: 23%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 8px #ebebeb;
 }
 .main-container .cards .card__picture {
   height: 200px;
   width: 100%;
   object-fit: cover;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   position: relative;
 }
-.main-container .cards .card__title {
+.main-container .cards .card__badge {
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px transparent;
+  background-color: #99e2d0;
+  color: #2c9c81;
+  position: absolute;
+  margin: 15px 0px 0px -105px;
+  padding: 6px 14px;
+  border-radius: 3px;
+}
+.main-container .cards .card__container_txt {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: black;
+}
+.main-container .cards .card__container_txt .card__title {
   margin: 0;
 }
-
+.main-container .cards .card__container_txt .card__subtitle {
+  margin: 0;
+}
+.main-container .button__hearth {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  margin: 220px 0px 0px 265px;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: medium;
