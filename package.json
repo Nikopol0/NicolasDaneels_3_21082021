@@ -1,11 +1,11 @@
 {
-  "name": "p3_nicolasdaneels",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000D\u0000a\u0000n\u0000e\u0000e\u0000l\u0000s\u0000_\u00003\u0000_\u00002\u00001\u00000\u00008\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000#\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000D\u0000a\u0000n\u0000e\u0000e\u0000l\u0000s\u0000_\u00003\u0000_\u00002\u00001\u00000\u00008\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000#\u0000 \u0000N\u0000i\u0000c\u0000o\u0000l\u0000a\u0000s\u0000D\u0000a\u0000n\u0000e\u0000e\u0000l\u0000s\u0000_\u00003\u0000_\u00002\u00001\u00000\u00008\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000",
+  "description": "restaurant",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch src/assets/sass/main.scss src/assets/style/style.css"
+    "sass": "sass --watch src/assets/sass/main.scss:src/assets/style/style.css"
   },
   "repository": {
     "type": "git",
