@@ -1,0 +1,9 @@
+$primary: #9356dc;
+$secondary: #ff79da;
+$terciary: #99e2d0;
+@mixin button-color1 {
+  border: 0;
+  background: linear-gradient(168deg, #ff79da, #9356dc);
+  color: white;
+  cursor: pointer;
+}
