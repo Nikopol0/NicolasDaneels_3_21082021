@@ -1,117 +1,18 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900 & affichage=échange");
-.card .card__picture {
-  width: 100%;
-}
+/* Error: unmatched "}".
+ *   ,
+ * 8 |   }
+ *   |   ^
+ *   '
+ *   src\assets\page\page.scss 8:3  @import
+ *   src\assets\sass\main.scss 4:9  root stylesheet */
 
-footer {
-  background-color: #353535;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: unmatched "}".\a   \2577 \a 8 \2502    }\d\a   \2502    ^\a   \2575 \a   src\\assets\\page\\page.scss 8:3  @import\a   src\\assets\\sass\\main.scss 4:9  root stylesheet';
 }
-footer .footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  height: 200px;
-  width: 100%;
-}
-footer .footer-container a {
-  color: white;
-}
-footer .footer-container .footer-container__title {
-  color: white;
-}
-footer .footer-container .footer-container__list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 50%;
-}
-
-h1 {
-  font-size: large;
-}
-
-header {
-  font-size: 20px;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header .header__logo {
-  width: 36%;
-  height: auto;
-  margin-bottom: 20px;
-}
-.header .header__container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 295px;
-  background-color: #f6f6f6;
-  justify-content: space-between;
-}
-.header .header__container .header__location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #eaeaea;
-  width: 100%;
-  height: 50px;
-  box-shadow: 1px -3px 3px #dbdbdb;
-}
-.header .header__container .header__location .location-text {
-  font-size: 13px;
-  font-weight: bold;
-  margin-left: 10px;
-}
-.header .header__title {
-  text-align: center;
-  width: 77%;
-  font-size: 22px;
-  margin-bottom: 0;
-}
-.header .header__subtitle {
-  width: 81%;
-  text-align: center;
-  font-size: 16px;
-  margin-top: 0;
-}
-.header .explore-restaurant {
-  border-radius: 30px;
-  width: 219px;
-  height: 46px;
-  font-size: 16px;
-  border: 0;
-  background: linear-gradient(168deg, #ff79da, #9356dc);
-  color: white;
-  cursor: pointer;
-  margin-bottom: 45px;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
-.main-container .cards {
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: medium;
-}
-body a,
-body li {
-  list-style-type: none;
-}
-
-/*# sourceMappingURL=style.css.map */
