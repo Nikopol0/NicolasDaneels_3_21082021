@@ -13,7 +13,8 @@ footer {
     .footer-container__title {
       color: white;
       margin-left: 20px;
-      font-family: "Shrikhand", sans-serif
+      font-family: "Shrikhand", sans-serif;
+      font-size: 17px;
     }
     .footer-container__list {
       display: flex;
@@ -25,4 +26,25 @@ footer {
       list-style-type: none;
     }
   }
+}
+.header__container--arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5px;
+  .header__logo--arrow {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+  }
+  .fa-arrow-left:before{
+    content: "\f060";
+    font-size: 12px;
+    position: absolute;
+    left: 15px;
+    top: 6px;
+  }
+}
+.card__picture--restaurant {
+  width: 100%;
 }
