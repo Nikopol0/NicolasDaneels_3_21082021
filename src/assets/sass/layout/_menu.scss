@@ -52,17 +52,20 @@
   }
   .menu-container {
     display: flex;
-    height: 235px;
     flex-direction: column;
     justify-content: space-between;
     .menu__title {
       margin: 20px 0px 10px 0px;
       font-size: 15px;
       font-weight: normal;
+      border-bottom: solid 3px $terciary;
+      width: 40px;
+      padding-bottom: 3px;
     }
     .menu-item__delay-0,
     .menu-item__delay-1,
-    .menu-item__delay-2 {
+    .menu-item__delay-2,
+    .menu-item__delay-3 {
       @include menu;
       .menu-item__header {
         display: flex;
@@ -74,7 +77,7 @@
         display: flex;
         align-items: flex-end;
         margin-right: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
         font-size: 12px;
         font-weight: bold;
       }
