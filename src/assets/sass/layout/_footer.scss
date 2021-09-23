@@ -1,5 +1,7 @@
+@import "../utils/_variable.scss";
 footer {
   background-color: #353535;
+  position: relative;
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -26,25 +28,4 @@ footer {
       list-style-type: none;
     }
   }
-}
-.header__container--arrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 5px;
-  .header__logo--arrow {
-    font-family: "Shrikhand", sans-serif;
-    margin: 0;
-  }
-  .fa-arrow-left:before{
-    content: "\f060";
-    font-size: 12px;
-    position: absolute;
-    left: 15px;
-    top: 6px;
-  }
-}
-.card__picture--restaurant {
-  width: 100%;
 }

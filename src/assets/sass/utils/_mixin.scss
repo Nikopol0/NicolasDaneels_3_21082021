@@ -3,8 +3,43 @@
   background: linear-gradient(168deg, #ff79da, #9356dc);
   color: white;
   cursor: pointer;
+  border-radius: 30px;
+  width: 219px;
+  height: 46px;
+  font-size: 16px;
+}
+@mixin button-color1--menu {
+  border: 0;
+  background: linear-gradient(168deg, #ff79da, #9356dc);
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 175px;
+  height: 46px;
+  font-size: 16px;
 }
 @mixin button-nav {
   padding: 0px 20px 0px 25px;
   color: #7e7e7e;
+}
+@mixin menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  height: 52px;
+  box-shadow: 0px 10px 8px #ebebeb;
+}
+@mixin menu-title {
+  font-size: 15px;
+  font-weight: normal;
+  display: flex;
+}
+@mixin hearth-menu {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 25px;
+  margin-top: 18px;
+  margin-right: 10px;
 }

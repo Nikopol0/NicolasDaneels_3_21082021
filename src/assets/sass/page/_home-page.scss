@@ -14,13 +14,13 @@
     flex-wrap: wrap;
     width: 100%;
     height: 295px;
-    background-color: #f6f6f6;
+    background-color: $quaternary;
     justify-content: space-between;
     .header__location {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #eaeaea;
+      background-color: $quinary;
       width: 100%;
       height: 50px;
       box-shadow: 1px -3px 3px #dbdbdb;

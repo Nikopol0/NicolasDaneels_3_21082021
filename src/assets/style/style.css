@@ -37,6 +37,7 @@
 }
 footer {
   background-color: #353535;
+  position: relative;
 }
 footer .footer-container {
   display: flex;
@@ -75,17 +76,129 @@ footer .footer-container .footer-container__list {
 .header__container--arrow .header__logo--arrow {
   font-family: "Shrikhand", sans-serif;
   margin: 0;
+  font-size: 25px;
 }
 .header__container--arrow .fa-arrow-left:before {
   content: "\f060";
-  font-size: 12px;
+  font-size: 18px;
   position: absolute;
-  left: 15px;
-  top: 6px;
+  left: 18px;
+  top: 10px;
+  text-decoration: none;
+  color: black;
 }
 
-.card__picture--restaurant {
+.menu-picture {
+  position: relative;
+  height: 200px;
+}
+.menu-picture .card__picture--restaurant {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.main {
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  padding: 15px;
+}
+.main .menu-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .menu-header .menu-header__title {
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-top: 12px;
+  font-family: "Shrikhand", sans-serif;
+}
+.main .menu-header .button__hearth--menu {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 25px;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+.main .menu-container {
+  display: flex;
+  height: 235px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .menu-container .menu__title {
+  margin: 20px 0px 10px 0px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.main .menu-container .menu-item__delay-0,
+.main .menu-container .menu-item__delay-1,
+.main .menu-container .menu-item__delay-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  height: 52px;
+  box-shadow: 0px 10px 8px #ebebeb;
+}
+.main .menu-container .menu-item__delay-0 .menu-item__header,
+.main .menu-container .menu-item__delay-1 .menu-item__header,
+.main .menu-container .menu-item__delay-2 .menu-item__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.main .menu-container .menu-item__delay-0 .menu-item__price,
+.main .menu-container .menu-item__delay-1 .menu-item__price,
+.main .menu-container .menu-item__delay-2 .menu-item__price {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.main .menu-container .menu-item__delay-0 .menu-item__confirmation,
+.main .menu-container .menu-item__delay-1 .menu-item__confirmation,
+.main .menu-container .menu-item__delay-2 .menu-item__confirmation {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.main .menu-container .menu-item__delay-0 .menu-item__title,
+.main .menu-container .menu-item__delay-1 .menu-item__title,
+.main .menu-container .menu-item__delay-2 .menu-item__title {
+  margin: 0px 0px 3px 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.main .menu-container .menu-item__delay-0 .menu-item__description,
+.main .menu-container .menu-item__delay-1 .menu-item__description,
+.main .menu-container .menu-item__delay-2 .menu-item__description {
+  margin: 0;
+  font-weight: normal;
+  font-size: 13px;
+}
+.main .order-btn {
+  display: flex;
+  justify-content: space-evenly;
+  height: 130px;
+  align-items: center;
+}
+.main .order-btn .order {
+  border: 0;
+  background: linear-gradient(168deg, #ff79da, #9356dc);
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 175px;
+  height: 46px;
+  font-size: 16px;
 }
 
 .header {
@@ -143,6 +256,10 @@ footer .footer-container .footer-container__list {
   background: linear-gradient(168deg, #ff79da, #9356dc);
   color: white;
   cursor: pointer;
+  border-radius: 30px;
+  width: 219px;
+  height: 46px;
+  font-size: 16px;
   margin-bottom: 45px;
 }
 
@@ -283,16 +400,19 @@ footer .footer-container .footer-container__list {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: medium;
+  margin: 0;
 }
 body h1 {
   font-size: large;
 }
-body header {
-  font-size: 20px;
-}
 body a {
   text-decoration: none;
+}
+body p, body h2, body h3, body h4 {
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

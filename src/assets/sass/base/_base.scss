@@ -1,13 +1,17 @@
 body {
     font-family: "Roboto", sans-serif;
-    font-size: medium;
+    margin: 0;
     h1 {
       font-size: large;
-    }
-    header {
-      font-size: 20px;
     }
     a {
       text-decoration: none;
     }
+    p, h2, h3, h4 {
+      font-family: "Roboto", sans-serif;
+    }
+    header {
+      font-size: 20px;
+    }
+    
   }
