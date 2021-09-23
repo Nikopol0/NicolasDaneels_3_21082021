@@ -4,9 +4,11 @@
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation-name:spin, fadeout;
-    animation-duration: 1000ms;
-    animation-timing-function: linear;
+    opacity: 0;
+    display: block;
+    animation-name: spin, fadeout;
+    animation-duration: 2000ms;
+    animation-timing-function: linear ;
     animation-iteration-count: 1;
     position: absolute;
     top: 25%;
