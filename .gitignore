@@ -1,8 +1,1 @@
-#  archives ignore list
-*how-ref -d --head
-*.json
-#ignore hidden file
-.*
- 
-# mais pas ce fichier car utile
-!.gitignore
+package.json
