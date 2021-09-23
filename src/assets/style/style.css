@@ -76,14 +76,14 @@ footer .footer-container .footer-container__list {
 .header__container--arrow .header__logo--arrow {
   font-family: "Shrikhand", sans-serif;
   margin: 0;
-  font-size: 25px;
+  font-size: 30px;
 }
 .header__container--arrow .fa-arrow-left:before {
   content: "\f060";
   font-size: 18px;
   position: absolute;
   left: 18px;
-  top: 10px;
+  top: 13px;
   text-decoration: none;
   color: black;
 }
@@ -111,7 +111,7 @@ footer .footer-container .footer-container__list {
   justify-content: space-between;
 }
 .main .menu-header .menu-header__title {
-  font-size: 25px;
+  font-size: 32px;
   margin-bottom: 0;
   margin-top: 12px;
   font-family: "Shrikhand", sans-serif;
@@ -125,7 +125,6 @@ footer .footer-container .footer-container__list {
 }
 .main .menu-container {
   display: flex;
-  height: 235px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -133,53 +132,64 @@ footer .footer-container .footer-container__list {
   margin: 20px 0px 10px 0px;
   font-size: 15px;
   font-weight: normal;
+  border-bottom: solid 3px #99e2d0;
+  width: 40px;
+  padding-bottom: 3px;
 }
 .main .menu-container .menu-item__delay-0,
 .main .menu-container .menu-item__delay-1,
-.main .menu-container .menu-item__delay-2 {
+.main .menu-container .menu-item__delay-2,
+.main .menu-container .menu-item__delay-3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 15px;
   background-color: white;
-  height: 52px;
+  height: 60px;
   box-shadow: 0px 10px 8px #ebebeb;
+  margin-bottom: 15px;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__header,
 .main .menu-container .menu-item__delay-1 .menu-item__header,
-.main .menu-container .menu-item__delay-2 .menu-item__header {
+.main .menu-container .menu-item__delay-2 .menu-item__header,
+.main .menu-container .menu-item__delay-3 .menu-item__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
+  width: 60%;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__price,
 .main .menu-container .menu-item__delay-1 .menu-item__price,
-.main .menu-container .menu-item__delay-2 .menu-item__price {
+.main .menu-container .menu-item__delay-2 .menu-item__price,
+.main .menu-container .menu-item__delay-3 .menu-item__price {
   display: flex;
   align-items: flex-end;
   margin-right: 20px;
-  margin-bottom: 10px;
-  font-size: 12px;
+  margin-bottom: 9px;
+  font-size: 14px;
   font-weight: bold;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__confirmation,
 .main .menu-container .menu-item__delay-1 .menu-item__confirmation,
-.main .menu-container .menu-item__delay-2 .menu-item__confirmation {
+.main .menu-container .menu-item__delay-2 .menu-item__confirmation,
+.main .menu-container .menu-item__delay-3 .menu-item__confirmation {
   display: flex;
   align-items: center;
   display: none;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__title,
 .main .menu-container .menu-item__delay-1 .menu-item__title,
-.main .menu-container .menu-item__delay-2 .menu-item__title {
-  margin: 0px 0px 3px 0px;
+.main .menu-container .menu-item__delay-2 .menu-item__title,
+.main .menu-container .menu-item__delay-3 .menu-item__title {
+  margin: 0px 0px 4px 0px;
   font-weight: bold;
   font-size: 14px;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__description,
 .main .menu-container .menu-item__delay-1 .menu-item__description,
-.main .menu-container .menu-item__delay-2 .menu-item__description {
+.main .menu-container .menu-item__delay-2 .menu-item__description,
+.main .menu-container .menu-item__delay-3 .menu-item__description {
   margin: 0;
   font-weight: normal;
   font-size: 13px;
