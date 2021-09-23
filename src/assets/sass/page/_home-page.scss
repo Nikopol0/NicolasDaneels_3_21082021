@@ -44,10 +44,6 @@
     margin-top: 0;
   }
   .explore-restaurant {
-    border-radius: 30px;
-    width: 219px;
-    height: 46px;
-    font-size: 16px;
     @include button-color1;
     margin-bottom: 45px;
   }
@@ -88,7 +84,7 @@
       background: $primary;
       border: solid 1px transparent;
       border-radius: 25px;
-      padding: 4px 6px 4px 6px;
+      padding: 4px 7px 4px 7px;
     }
     .fa-mobile-alt:before {
       @include button-nav;
