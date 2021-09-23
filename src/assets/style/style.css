@@ -9,8 +9,10 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
+  opacity: 0;
+  display: block;
   animation-name: spin, fadeout;
-  animation-duration: 1000ms;
+  animation-duration: 2000ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   position: absolute;
@@ -258,10 +260,6 @@ footer .footer-container .footer-container__list {
   margin-top: 0;
 }
 .header .explore-restaurant {
-  border-radius: 30px;
-  width: 219px;
-  height: 46px;
-  font-size: 16px;
   border: 0;
   background: linear-gradient(168deg, #ff79da, #9356dc);
   color: white;
@@ -311,7 +309,7 @@ footer .footer-container .footer-container__list {
   background: #9356dc;
   border: solid 1px transparent;
   border-radius: 25px;
-  padding: 4px 6px 4px 6px;
+  padding: 4px 7px 4px 7px;
 }
 .nav .nav-item .fa-mobile-alt:before {
   padding: 0px 20px 0px 25px;
