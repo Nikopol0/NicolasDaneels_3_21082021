@@ -9,14 +9,14 @@
   .header__logo--arrow {
     font-family: "Shrikhand", sans-serif;
     margin: 0;
-    font-size: 25px;
+    font-size: 30px;
   }
   .fa-arrow-left:before {
     content: "\f060";
     font-size: 18px;
     position: absolute;
     left: 18px;
-    top: 10px;
+    top: 13px;
     text-decoration: none;
     color: black;
   }
@@ -41,7 +41,7 @@
     flex-direction: row;
     justify-content: space-between;
     .menu-header__title {
-      font-size: 25px;
+      font-size: 32px;
       margin-bottom: 0;
       margin-top: 12px;
       font-family: "Shrikhand", sans-serif;
@@ -72,13 +72,14 @@
         flex-direction: column;
         justify-content: center;
         margin-left: 10px;
+        width: 60%;
       }
       .menu-item__price {
         display: flex;
         align-items: flex-end;
         margin-right: 20px;
         margin-bottom: 9px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
       }
       .menu-item__confirmation {
@@ -87,7 +88,7 @@
         display: none;
       }
       .menu-item__title {
-        margin: 0px 0px 3px 0px;
+        margin: 0px 0px 4px 0px;
         font-weight: bold;
         font-size: 14px;
       }
