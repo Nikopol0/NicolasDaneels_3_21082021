@@ -1,52 +1,50 @@
 .menu-item__delay-0 {
-  cursor: pointer;
-  animation-name: appear, moving;
-  animation-duration: s;
+  animation-duration: 1000ms;
+  animation-delay: 0s;
+  animation-name: appear ,trans;
   animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-delay: s;
-  transform: translate();
+  animation-iteration-count: 1;
 }
 .menu-item__delay-1 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-name: appear, moving;
+  animation-duration: 1000ms;
+  animation-delay: 0200ms;
+  animation-name: appear ,trans;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 .menu-item__delay-2 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-name: appear, moving;
+  animation-duration: 1000ms;
+  animation-delay: 0400ms;
+  animation-name: appear ,trans;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 .menu-item__delay-3 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-name: appear, moving;
+  animation-duration: 1000ms;
+  animation-delay: 0600ms;
+  animation-name: appear ,trans;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 @keyframes appear {
-  0% {
-    transform: scale(0);
+  from {
+    opacity: 0;
   }
-  100% {
-    transform: scale(1);
+  to {
+    opacity: 1;
   }
 }
-@keyframes moving {
+@keyframes trans {
   0% {
-    transform: translateY(0);
+    transform: translateY(5px);
   }
   25% {
-    transform: translateY(8px);
+    transform: translateY(3px);
   }
   75% {
-    transform: translateY(-8px);
+    transform: translateY(1px);
   }
   100% {
-    transform: translateY(0);
-  }
+    transform: translateY(0px);
+}
 }

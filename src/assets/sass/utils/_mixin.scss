@@ -1,6 +1,6 @@
 @mixin button-color1 {
   border: 0;
-  background: linear-gradient(168deg, #ff79da, #9356dc);
+  background: linear-gradient(168deg, $secondary, $primary);
   color: white;
   cursor: pointer;
   border-radius: 30px;
@@ -50,7 +50,9 @@
 @mixin icon-hearth--active {
   position: absolute;
   opacity: 0;
-  color: $secondary;
+  color: $primary;
+  mix-blend-mode: lighten;
+
   transition: opacity 1s;
    &:hover{
      opacity: 1;

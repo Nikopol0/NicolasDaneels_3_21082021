@@ -37,59 +37,57 @@
   }
 }
 .menu-item__delay-0 {
-  cursor: pointer;
-  animation-name: appear, moving;
-  animation-duration: s;
+  animation-duration: 1000ms;
+  animation-delay: 0s;
+  animation-name: appear, trans;
   animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-delay: s;
-  transform: translate();
+  animation-iteration-count: 1;
 }
 
 .menu-item__delay-1 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-name: appear, moving;
+  animation-duration: 1000ms;
+  animation-delay: 200ms;
+  animation-name: appear, trans;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 
 .menu-item__delay-2 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-name: appear, moving;
+  animation-duration: 1000ms;
+  animation-delay: 400ms;
+  animation-name: appear, trans;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 
 .menu-item__delay-3 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-name: appear, moving;
+  animation-duration: 1000ms;
+  animation-delay: 600ms;
+  animation-name: appear, trans;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 
 @keyframes appear {
-  0% {
-    transform: scale(0);
+  from {
+    opacity: 0;
   }
-  100% {
-    transform: scale(1);
+  to {
+    opacity: 1;
   }
 }
-@keyframes moving {
+@keyframes trans {
   0% {
-    transform: translateY(0);
+    transform: translateY(5px);
   }
   25% {
-    transform: translateY(8px);
+    transform: translateY(3px);
   }
   75% {
-    transform: translateY(-8px);
+    transform: translateY(1px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 footer {
@@ -205,6 +203,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .main .menu-container .menu-item__delay-1,
 .main .menu-container .menu-item__delay-2,
 .main .menu-container .menu-item__delay-3 {
+  opacity: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -241,8 +240,10 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .main .menu-container .menu-item__delay-3 .menu-item__confirmation {
   display: flex;
   align-items: center;
+  width: 17%;
+  background-color: blue;
+  justify-content: center;
   display: none;
-  width: 25%;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__title,
 .main .menu-container .menu-item__delay-1 .menu-item__title,
@@ -485,7 +486,8 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .main-container .cards .card__container_txt .button__hearth .active.fas.fa-heart {
   position: absolute;
   opacity: 0;
-  color: #ff79da;
+  color: #9356dc;
+  mix-blend-mode: lighten;
   transition: opacity 1s;
 }
 .main-container .cards .card__container_txt .button__hearth .active.fas.fa-heart:hover {

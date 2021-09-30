@@ -66,6 +66,7 @@
     .menu-item__delay-1,
     .menu-item__delay-2,
     .menu-item__delay-3 {
+      opacity: 1;
       @include menu;
       .menu-item__header {
         display: flex;
@@ -85,8 +86,10 @@
       .menu-item__confirmation {
         display: flex;
         align-items: center;
+        width: 17%;
+        background-color: blue;
+        justify-content: center;
         display: none;
-        width: 25%;
       }
       .menu-item__title {
         margin: 0px 0px 4px 0px;
