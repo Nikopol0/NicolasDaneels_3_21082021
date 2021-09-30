@@ -44,3 +44,15 @@
   margin-top: 18px;
   margin-right: 10px;
 }
+@mixin icon-hearth {
+  position: relative;
+}
+@mixin icon-hearth--active {
+  position: absolute;
+  opacity: 0;
+  color: $secondary;
+  transition: opacity 1s;
+   &:hover{
+     opacity: 1;
+   }
+}

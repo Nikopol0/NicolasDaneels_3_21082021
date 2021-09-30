@@ -6,26 +6,34 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
-    height: 200px;
+    height: 150px;
     width: 100%;
+    padding: 20px;
     a {
       color: white;
     }
     .footer-container__title {
       color: white;
-      margin-left: 20px;
+      margin: 0;
+      margin-bottom: 10px;
       font-family: "Shrikhand", sans-serif;
       font-size: 17px;
+      margin-bottom: 10px;
     }
     .footer-container__list {
       display: flex;
       padding: 0;
-      margin: 0px 0px 20px 20px;
+      margin: 0;
       flex-direction: column;
       justify-content: space-between;
-      height: 50%;
+      height: 60%;
       list-style-type: none;
+        .fa-utensils {
+          width: 25px;
+        }
+        .fa-hands-helping{
+          width: 25px;
+        }
     }
   }
 }

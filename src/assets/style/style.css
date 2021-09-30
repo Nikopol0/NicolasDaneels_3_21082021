@@ -5,12 +5,11 @@
   border: 16px solid #f3f3f3;
   /* Light grey */
   border-top: 16px solid #99e2d0;
-  /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
   opacity: 0;
-  display: block;
+  visibility: hidden;
   animation-name: spin, fadeout;
   animation-duration: 2000ms;
   animation-timing-function: linear;
@@ -30,11 +29,67 @@
 }
 @keyframes fadeout {
   0% {
+    visibility: visible;
     opacity: 1;
   }
   100% {
     opacity: 0;
-    display: none;
+  }
+}
+.menu-item__delay-0 {
+  cursor: pointer;
+  animation-name: appear, moving;
+  animation-duration: s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: s;
+  transform: translate();
+}
+
+.menu-item__delay-1 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-name: appear, moving;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.menu-item__delay-2 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-name: appear, moving;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.menu-item__delay-3 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-name: appear, moving;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(8px);
+  }
+  75% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 footer {
@@ -45,27 +100,35 @@ footer .footer-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
-  height: 200px;
+  height: 150px;
   width: 100%;
+  padding: 20px;
 }
 footer .footer-container a {
   color: white;
 }
 footer .footer-container .footer-container__title {
   color: white;
-  margin-left: 20px;
+  margin: 0;
+  margin-bottom: 10px;
   font-family: "Shrikhand", sans-serif;
   font-size: 17px;
+  margin-bottom: 10px;
 }
 footer .footer-container .footer-container__list {
   display: flex;
   padding: 0;
-  margin: 0px 0px 20px 20px;
+  margin: 0;
   flex-direction: column;
   justify-content: space-between;
-  height: 50%;
+  height: 60%;
   list-style-type: none;
+}
+footer .footer-container .footer-container__list .fa-utensils {
+  width: 25px;
+}
+footer .footer-container .footer-container__list .fa-hands-helping {
+  width: 25px;
 }
 
 .header__container--arrow {
@@ -73,14 +136,13 @@ footer .footer-container .footer-container__list {
   flex-direction: row;
   justify-content: center;
   position: relative;
-  margin-bottom: 5px;
 }
 .header__container--arrow .header__logo--arrow {
   font-family: "Shrikhand", sans-serif;
   margin: 0;
   font-size: 30px;
 }
-.header__container--arrow .fa-arrow-left:before {
+.header__container--arrow .fa-arrow-left {
   content: "\f060";
   font-size: 18px;
   position: absolute;
@@ -116,6 +178,7 @@ footer .footer-container .footer-container__list {
   font-size: 32px;
   margin-bottom: 0;
   margin-top: 12px;
+  width: 100%;
   font-family: "Shrikhand", sans-serif;
 }
 .main .menu-header .button__hearth--menu {
@@ -179,6 +242,7 @@ footer .footer-container .footer-container__list {
   display: flex;
   align-items: center;
   display: none;
+  width: 25%;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__title,
 .main .menu-container .menu-item__delay-1 .menu-item__title,
@@ -218,10 +282,14 @@ footer .footer-container .footer-container__list {
   flex-direction: column;
   align-items: center;
 }
-.header .header__logo {
-  width: 36%;
-  height: auto;
-  margin-bottom: 20px;
+.header .header-logo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-logo .header-logo__picture {
+  width: 55%;
 }
 .header .header__container {
   display: flex;
@@ -258,6 +326,7 @@ footer .footer-container .footer-container__list {
   text-align: center;
   font-size: 16px;
   margin-top: 0;
+  font-weight: normal;
 }
 .header .explore-restaurant {
   border: 0;
@@ -294,9 +363,9 @@ footer .footer-container .footer-container__list {
   align-items: center;
   justify-content: flex-start;
   background-color: #f6f6f6;
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0px 3px 8px #e6e6e6;
-  width: 90%;
+  width: 83%;
   height: 70px;
   position: relative;
 }
@@ -308,18 +377,22 @@ footer .footer-container .footer-container__list {
   color: white;
   background: #9356dc;
   border: solid 1px transparent;
-  border-radius: 25px;
-  padding: 4px 7px 4px 7px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
 }
-.nav .nav-item .fa-mobile-alt:before {
+.nav .nav-item .fa-mobile-alt {
   padding: 0px 20px 0px 25px;
   color: #7e7e7e;
 }
-.nav .nav-item .fa-list-ul:before {
+.nav .nav-item .fa-list-ul {
   padding: 0px 20px 0px 25px;
   color: #7e7e7e;
 }
-.nav .nav-item .fa-store:before {
+.nav .nav-item .fa-store {
   padding: 0px 20px 0px 25px;
   color: #7e7e7e;
 }
@@ -382,10 +455,10 @@ footer .footer-container .footer-container__list {
 .main-container .cards .card__container_txt {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-left: 15px;
+  padding: 10px;
+  height: 16%;
   color: black;
-  position: relative;
+  flex-wrap: wrap;
 }
 .main-container .cards .card__container_txt .card__title {
   margin: 0;
@@ -393,17 +466,30 @@ footer .footer-container .footer-container__list {
 .main-container .cards .card__container_txt .card__subtitle {
   margin: 0;
 }
-.main-container .button__hearth {
+.main-container .cards .card__container_txt .button__hearth {
   font-size: 25px;
+  display: flex;
+  align-self: flex-end;
   border: none;
   background-color: transparent;
-  position: absolute;
-  right: 20px;
+  position: relative;
+  right: 6px;
   top: 5px;
   cursor: pointer;
+  width: 39px;
+  top: 6px;
 }
-.main-container .button__hearth a:active {
-  color: red;
+.main-container .cards .card__container_txt .button__hearth .far.fa-heart {
+  position: relative;
+}
+.main-container .cards .card__container_txt .button__hearth .active.fas.fa-heart {
+  position: absolute;
+  opacity: 0;
+  color: #ff79da;
+  transition: opacity 1s;
+}
+.main-container .cards .card__container_txt .button__hearth .active.fas.fa-heart:hover {
+  opacity: 1;
 }
 
 body {

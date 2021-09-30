@@ -1,0 +1,52 @@
+.menu-item__delay-0 {
+  cursor: pointer;
+  animation-name: appear, moving;
+  animation-duration: s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: s;
+  transform: translate();
+}
+.menu-item__delay-1 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-name: appear, moving;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.menu-item__delay-2 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-name: appear, moving;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.menu-item__delay-3 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-name: appear, moving;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(8px);
+  }
+  75% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

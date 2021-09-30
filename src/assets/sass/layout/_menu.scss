@@ -5,13 +5,12 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  margin-bottom: 5px;
   .header__logo--arrow {
     font-family: "Shrikhand", sans-serif;
     margin: 0;
     font-size: 30px;
   }
-  .fa-arrow-left:before {
+  .fa-arrow-left {
     content: "\f060";
     font-size: 18px;
     position: absolute;
@@ -87,6 +86,7 @@
         display: flex;
         align-items: center;
         display: none;
+        width: 25%;
       }
       .menu-item__title {
         margin: 0px 0px 4px 0px;
