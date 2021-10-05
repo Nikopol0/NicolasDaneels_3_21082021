@@ -1,32 +1,20 @@
-.menu-item__delay-0 {
-  animation-duration: 1000ms;
-  animation-delay: 0s;
-  animation-name: appear ,trans;
-  animation-timing-function: linear;
+.menu-container  {
+  animation-name: fadeIn, translat;
+  opacity: 0;
+  animation-duration: 3s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-.menu-item__delay-1 {
-  animation-duration: 1000ms;
-  animation-delay: 0200ms;
-  animation-name: appear ,trans;
-  animation-timing-function: linear;
+.menu-item__delay-0,
+    .menu-item__delay-1,
+    .menu-item__delay-2,
+    .menu-item__delay-3 {
+  animation-name: fadeIn, translat;
   animation-iteration-count: 1;
+  opacity: 1;
+  animation-fill-mode: forwards;
 }
-.menu-item__delay-2 {
-  animation-duration: 1000ms;
-  animation-delay: 0400ms;
-  animation-name: appear ,trans;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
-.menu-item__delay-3 {
-  animation-duration: 1000ms;
-  animation-delay: 0600ms;
-  animation-name: appear ,trans;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
-@keyframes appear {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -34,17 +22,14 @@
     opacity: 1;
   }
 }
-@keyframes trans {
+@keyframes translat {
   0% {
     transform: translateY(5px);
   }
-  25% {
-    transform: translateY(3px);
-  }
-  75% {
-    transform: translateY(1px);
+  50% {
+    transform: translateY(2px);
   }
   100% {
     transform: translateY(0px);
-}
+  }
 }

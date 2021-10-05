@@ -66,40 +66,64 @@
     .menu-item__delay-1,
     .menu-item__delay-2,
     .menu-item__delay-3 {
-      opacity: 1;
-      @include menu;
+      @include menu-item;
       .menu-item__header {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-left: 10px;
-        width: 60%;
+        width: 100%;
+        justify-content: space-between;
+        @include glide;
       }
-      .menu-item__price {
+      .menu-item__text {
         display: flex;
-        align-items: flex-end;
-        margin-right: 20px;
-        margin-bottom: 9px;
-        font-size: 14px;
-        font-weight: bold;
-      }
-      .menu-item__confirmation {
-        display: flex;
-        align-items: center;
-        width: 17%;
-        background-color: blue;
         justify-content: center;
-        display: none;
+        height: 100%;
+        flex-direction: column;
+        width: 83%;
       }
       .menu-item__title {
         margin: 0px 0px 4px 0px;
         font-weight: bold;
         font-size: 14px;
+        width: 100%;
       }
       .menu-item__description {
+        overflow: hidden;
+        text-overflow: ellipsis;
         margin: 0;
         font-weight: normal;
         font-size: 13px;
+        width: 100%;
+      }
+      .menu-item__price {
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        width: 10%;
+      }
+      .menu-item__confirmation {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        background-color: $terciary;
+        justify-content: center;
+        border-radius: 0% 25% 25% 0%;
+        margin-right: -100px;
+        opacity: 1;
+        .menu-item__wrapIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $terciary;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          border: solid 1px transparent;
+          background-color: white;
+          font-size: 10px;
+        }
       }
     }
   }
