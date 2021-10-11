@@ -20,9 +20,11 @@
   }
 @keyframes fadeout {
     0% {
+        background-color: blue;
         visibility: visible;
         opacity: 1;
     } 100% {
         opacity: 0;
+        background-color: transparent;
     }
 }

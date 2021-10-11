@@ -1,16 +1,39 @@
-.menu-container  {
+.menu-container {
   animation-name: fadeIn, translat;
   opacity: 0;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-.menu-item__delay-0,
-    .menu-item__delay-1,
-    .menu-item__delay-2,
-    .menu-item__delay-3 {
+.menu-item__delay-0 {
   animation-name: fadeIn, translat;
   animation-iteration-count: 1;
+  animation-delay: 0000ms;
+  animation-duration: 3s;
+  opacity: 1;
+  animation-fill-mode: forwards;
+}
+.menu-item__delay-1 {
+  animation-name: fadeIn, translat;
+  animation-iteration-count: 1;
+  animation-delay: 0400ms;
+  animation-duration: 3s;
+  opacity: 1;
+  animation-fill-mode: forwards;
+}
+.menu-item__delay-2 {
+  animation-name: fadeIn, translat;
+  animation-iteration-count: 1;
+  animation-delay: 0800ms;
+  animation-duration: 3s;
+  opacity: 1;
+  animation-fill-mode: forwards;
+}
+.menu-item__delay-3 {
+  animation-name: fadeIn, translat;
+  animation-iteration-count: 1;
+  animation-delay: 1200ms;
+  animation-duration: 1500ms;
   opacity: 1;
   animation-fill-mode: forwards;
 }

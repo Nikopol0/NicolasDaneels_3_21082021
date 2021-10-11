@@ -1,22 +1,34 @@
 @mixin button-color1 {
   border: 0;
   background: linear-gradient(168deg, $secondary, $primary);
+  box-shadow: 0px 7px 6px #beb7b7;
   color: white;
   cursor: pointer;
   border-radius: 30px;
   width: 219px;
   height: 46px;
   font-size: 16px;
+  &:hover {
+    background-color: lighten($primary, 10%);
+    background-blend-mode: lighten;
+    box-shadow: 0px 7px 6px #aca2a2;
+  }
 }
 @mixin button-color1--menu {
   border: 0;
   background: linear-gradient(168deg, $secondary, $primary);
+  box-shadow: 0px 7px 6px #beb7b7;
   color: white;
   cursor: pointer;
   border-radius: 30px;
   width: 175px;
   height: 46px;
   font-size: 16px;
+  &:hover {
+    background-color: lighten($primary, 10%);
+    background-blend-mode: lighten;
+    box-shadow: 0px 7px 6px #aca2a2;
+  }
 }
 @mixin button-nav {
   padding: 0px 20px 0px 25px;
@@ -40,18 +52,35 @@
   font-weight: normal;
   display: flex;
 }
-@mixin hearth-menu {
-  border: 1px solid transparent;
-  background-color: transparent;
+@mixin hearth {
+  align-self: flex-end;
+  border: none;
+  background-color: white;
+  position: relative;
+  right: 6px;
+  cursor: pointer;
+  top: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  font-size: 20px;
+}
+@mixin hearth--menu {
+  align-self: flex-end;
+  border: none;
+  background-color: $quaternary;
+  position: relative;
+  right: 6px;
+  cursor: pointer;
+  top: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 45px;
   font-size: 25px;
-  margin-top: 18px;
-  margin-right: 10px;
 }
 @mixin fill {
-  opacity: 0;
-  position: absolute;
-  top: 2px;
-  &:hover {
+  &:hover  .fill.fas.fa-heart{
     transition: opacity 1s;
     opacity: 1;
     background-image: linear-gradient(
@@ -69,9 +98,12 @@
   }
 }
 @mixin empty {
-  opacity: 1;
+  &:hover  .far.fa-heart{
+    transition: opacity 1s;
+    opacity: 0;
+  }
 }
-@mixin glide{
+@mixin slide {
   margin-right: 0px;
   cursor: pointer;
   white-space: nowrap;
@@ -80,7 +112,114 @@
     margin-right: 100px;
   }
   &:hover .menu-item__icon {
-    transform: rotate(360deg) ;
+    transform: rotate(360deg);
   }
 }
-
+@mixin check-rotate {
+  &:hover + .menu-item__icon {
+    transform: rotate(360deg);
+  }
+  .menu-item__icon {
+    transform: rotate(0);
+    transition: rotate, 1500ms;
+  }
+}
+@mixin tablet {
+}
+@mixin desktop-homepage {
+  @media screen and (min-width: 1280px) {
+    .nav .nav__title {
+      margin: 40px 0px 20px 70px;
+    }
+    .nav .nav__list {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      justify-content: space-around;
+      margin: 0;
+      align-items: center;
+      .nav-item {
+        width: 25%;
+      }
+    }
+    .main-container {
+      height: 900px;
+      justify-content: center;
+      .main__title {
+        margin: 20px 0px 20px 70px;
+      }
+      .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        .card {
+          width: 40%;
+          background-color: white;
+          border-radius: 15px;
+          height: 35%;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0px 10px 8px #ebebeb;
+        }
+      }
+    }
+    footer {
+      .footer-container {
+        display: flex;
+        align-items: center;
+        .footer-container__list {
+          display: flex;
+          height: 76%;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    .menu-picture {
+      position: relative;
+      height: 229px;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      height: 700px;
+      justify-content: space-between;
+      .menu-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .menu-item__delay-3 {
+          display: flex;
+          align-self: flex-end;
+        }
+        .menu-item__delay-0,
+        .menu-item__delay-1,
+        .menu-item__delay-2,
+        .menu-item__delay-3 {
+          width: 25%;
+          .menu-item__text {
+            width: 100%;
+          }
+        }
+      }
+    }
+    footer {
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 150px;
+        width: auto;
+        padding: 20px;
+      }
+    }
+  }
+}

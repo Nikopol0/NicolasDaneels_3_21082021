@@ -1,3 +1,19 @@
+body {
+  animation-name: fadeout;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  @keyframes fadeout {
+    0% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      background-color: transparent;
+    }
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -173,25 +189,20 @@
         margin: 0;
       }
       .button__hearth {
-        display: flex;
-        align-self: flex-end;
-        border: none;
-        background-color: white;
-        position: relative;
-        right: 6px;
-        cursor: pointer;
-        top: 6px;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        font-size: 20px;
-        .fill.far.fa-heart {
-          @include fill;
+        @include hearth;
+        @include fill;
+        @include empty;
+        .fill.fas.fa-heart {
+          opacity: 0;
+          position: absolute;
+          top: 2px;
         }
-        .far.fa-heart{
-          @include empty
+        .far.fa-heart {
+          opacity: 1;
+          position: relative;
         }
       }
     }
   }
 }
+@include desktop-homepage;
