@@ -56,10 +56,24 @@
         opacity: 0;
         position: absolute;
         top: 8px;
+        transition: opacity 1s;
+        background-image: linear-gradient(
+          to left,
+          #9356dc,
+          #b35cdc,
+          #cf64dc,
+          #e86edb,
+          #ff79da
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
       }
       .far.fa-heart {
         opacity: 1;
         position: relative;
+        transition: opacity 1s;
       }
     }
   }
@@ -142,6 +156,7 @@
           border: solid 1px transparent;
           background-color: white;
           font-size: 10px;
+          margin-right: 10px;
         }
       }
     }
@@ -156,4 +171,4 @@
     }
   }
 }
-@include desktop-menu;
+@include media-queries__menu;

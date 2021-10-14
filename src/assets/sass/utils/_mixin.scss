@@ -124,9 +124,12 @@
     transition: rotate, 1500ms;
   }
 }
-@mixin tablet {
-}
-@mixin desktop-homepage {
+@mixin media-queries__homepage {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .loader {
+      left: 40%;
+    }
+  }
   @media screen and (min-width: 1280px) {
     .nav .nav__title {
       margin: 40px 0px 20px 70px;
@@ -180,7 +183,24 @@
     }
   }
 }
-@mixin desktop-menu {
+@mixin media-queries__menu {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .main {
+      .menu-container {
+        .menu-item__delay-0,
+        .menu-item__delay-1,
+        .menu-item__delay-2,
+        .menu-item__delay-3 {
+          .menu-item__price {
+            width: 5%;
+          }
+          .menu-item__confirmation {
+            width: 11%;
+          }
+        }
+      }
+    }
+  }
   @media screen and (min-width: 1280px) {
     .loader {
       width: 200px;
