@@ -278,6 +278,9 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   margin-left: 10px;
   width: 100%;
   justify-content: space-between;
+  transition: margin-right 1000ms;
+  margin-right: 0px;
+  transform: rotate(360deg);
   margin-right: 0px;
   cursor: pointer;
   white-space: nowrap;
@@ -303,7 +306,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   justify-content: center;
   height: 100%;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__title,
 .main .menu-container .menu-item__delay-1 .menu-item__title,
@@ -334,7 +337,9 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   font-weight: bold;
   align-items: flex-end;
   margin-bottom: 10px;
-  width: 20%;
+  width: 10%;
+  justify-content: flex-end;
+  margin-right: 25px;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__confirmation,
 .main .menu-container .menu-item__delay-1 .menu-item__confirmation,
@@ -346,7 +351,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   background-color: #99e2d0;
   justify-content: center;
   border-radius: 0% 25% 25% 0%;
-  margin-right: -100px;
+  margin-right: -110px;
   opacity: 1;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__confirmation .menu-item__wrapIcon,
@@ -426,7 +431,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .main .menu-container .menu-item__delay-1 .menu-item__text,
 .main .menu-container .menu-item__delay-2 .menu-item__text,
 .main .menu-container .menu-item__delay-3 .menu-item__text {
-    width: 80%;
+    width: 90%;
   }
 
   footer .footer-container {

@@ -50,17 +50,17 @@
     }
     .button__hearth {
       @include hearth--menu;
-      @include fill;  
+      @include fill;
       @include empty;
-        .fill.fas.fa-heart {
-          opacity: 0;
-          position: absolute;
-          top: 8px;
-        }
-        .far.fa-heart {
-          opacity: 1;
-          position: relative;
-        }
+      .fill.fas.fa-heart {
+        opacity: 0;
+        position: absolute;
+        top: 8px;
+      }
+      .far.fa-heart {
+        opacity: 1;
+        position: relative;
+      }
     }
   }
   .menu-container {
@@ -86,6 +86,9 @@
         margin-left: 10px;
         width: 100%;
         justify-content: space-between;
+        transition: margin-right 1000ms;
+        margin-right: 0px;
+        transform: rotate(360deg);
         @include slide;
       }
       .menu-item__text {
@@ -93,7 +96,7 @@
         justify-content: center;
         height: 100%;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
       }
       .menu-item__title {
         margin: 0px 0px 4px 0px;
@@ -115,7 +118,9 @@
         font-weight: bold;
         align-items: flex-end;
         margin-bottom: 10px;
-        width: 20%;
+        width: 10%;
+        justify-content: flex-end;
+        margin-right: 25px;
       }
       .menu-item__confirmation {
         display: flex;
@@ -124,7 +129,7 @@
         background-color: $terciary;
         justify-content: center;
         border-radius: 0% 25% 25% 0%;
-        margin-right: -100px;
+        margin-right: -110px;
         opacity: 1;
         .menu-item__wrapIcon {
           display: flex;
