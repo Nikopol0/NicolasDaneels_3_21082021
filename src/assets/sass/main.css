@@ -10,13 +10,26 @@
   height: 120px;
   opacity: 0;
   visibility: hidden;
-  animation-name: spin, fadeout;
-  animation-duration: 2000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
+  -webkit-animation-name: spin, fadeout;
+          animation-name: spin, fadeout;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   position: absolute;
   top: 25%;
   left: 30%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
@@ -25,6 +38,17 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    background-color: blue;
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    background-color: transparent;
   }
 }
 @keyframes fadeout {
@@ -39,47 +63,80 @@
   }
 }
 .menu-container {
-  animation-name: fadeIn, translat;
+  -webkit-animation-name: fadeIn, translat;
+          animation-name: fadeIn, translat;
   opacity: 0;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-item__delay-0 {
-  animation-name: fadeIn, translat;
-  animation-iteration-count: 1;
-  animation-delay: 0ms;
-  animation-duration: 3s;
+  -webkit-animation-name: fadeIn, translat;
+          animation-name: fadeIn, translat;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   opacity: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-item__delay-1 {
-  animation-name: fadeIn, translat;
-  animation-iteration-count: 1;
-  animation-delay: 400ms;
-  animation-duration: 3s;
+  -webkit-animation-name: fadeIn, translat;
+          animation-name: fadeIn, translat;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   opacity: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-item__delay-2 {
-  animation-name: fadeIn, translat;
-  animation-iteration-count: 1;
-  animation-delay: 800ms;
-  animation-duration: 3s;
+  -webkit-animation-name: fadeIn, translat;
+          animation-name: fadeIn, translat;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   opacity: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-item__delay-3 {
-  animation-name: fadeIn, translat;
-  animation-iteration-count: 1;
-  animation-delay: 1200ms;
-  animation-duration: 1500ms;
+  -webkit-animation-name: fadeIn, translat;
+          animation-name: fadeIn, translat;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
   opacity: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
@@ -88,6 +145,17 @@
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes translat {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 @keyframes translat {
@@ -154,7 +222,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   font-size: 30px;
 }
 .header__container--arrow .fa-arrow-left {
-  content: "\f060";
+  content: "";
   font-size: 18px;
   position: absolute;
   left: 18px;
@@ -170,7 +238,8 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .menu-picture .card__picture--restaurant {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
 }
 
@@ -303,7 +372,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   justify-content: center;
   height: 100%;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 .main .menu-container .menu-item__delay-0 .menu-item__title,
 .main .menu-container .menu-item__delay-1 .menu-item__title,
@@ -426,7 +495,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .main .menu-container .menu-item__delay-1 .menu-item__text,
 .main .menu-container .menu-item__delay-2 .menu-item__text,
 .main .menu-container .menu-item__delay-3 .menu-item__text {
-    width: 80%;
+    width: 100%;
   }
 
   footer .footer-container {
@@ -439,10 +508,14 @@ footer .footer-container .footer-container__list .fa-hands-helping {
   }
 }
 body {
-  animation-name: fadeout;
-  animation-duration: 2000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 @keyframes fadeout {
   0% {
@@ -621,7 +694,8 @@ body {
 .main-container .cards .card__container_img .card__picture {
   height: 200px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   position: relative;
 }
@@ -756,6 +830,4 @@ body p, body h2, body h3, body h4 {
 }
 body header {
   font-size: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

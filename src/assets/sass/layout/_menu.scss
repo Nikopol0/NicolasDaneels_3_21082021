@@ -93,7 +93,7 @@
         justify-content: center;
         height: 100%;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
       }
       .menu-item__title {
         margin: 0px 0px 4px 0px;
@@ -151,4 +151,4 @@
     }
   }
 }
-@include desktop;
+@include desktop-menu;
