@@ -222,7 +222,7 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 .main .menu-header .button__hearth .fill.fas.fa-heart {
   opacity: 0;
   position: absolute;
-  top: 8px;
+  top: 9px;
   transition: opacity 1s;
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
@@ -401,17 +401,37 @@ footer .footer-container .footer-container__list .fa-hands-helping {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .main .menu-container .menu-item__delay-0 .menu-item__price,
-.main .menu-container .menu-item__delay-1 .menu-item__price,
-.main .menu-container .menu-item__delay-2 .menu-item__price,
-.main .menu-container .menu-item__delay-3 .menu-item__price {
+  .main .menu-container .menu-item__container {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main .menu-container .menu-item__container .menu-item__delay-0,
+.main .menu-container .menu-item__container .menu-item__delay-1,
+.main .menu-container .menu-item__container .menu-item__delay-2,
+.main .menu-container .menu-item__container .menu-item__delay-3 {
+    width: 45%;
+  }
+  .main .menu-container .menu-item__container .menu-item__delay-0 .menu-item__text,
+.main .menu-container .menu-item__container .menu-item__delay-1 .menu-item__text,
+.main .menu-container .menu-item__container .menu-item__delay-2 .menu-item__text,
+.main .menu-container .menu-item__container .menu-item__delay-3 .menu-item__text {
+    width: 69%;
+  }
+  .main .menu-container .menu-item__container .menu-item__delay-0 .menu-item__price,
+.main .menu-container .menu-item__container .menu-item__delay-1 .menu-item__price,
+.main .menu-container .menu-item__container .menu-item__delay-2 .menu-item__price,
+.main .menu-container .menu-item__container .menu-item__delay-3 .menu-item__price {
     width: 5%;
   }
-  .main .menu-container .menu-item__delay-0 .menu-item__confirmation,
-.main .menu-container .menu-item__delay-1 .menu-item__confirmation,
-.main .menu-container .menu-item__delay-2 .menu-item__confirmation,
-.main .menu-container .menu-item__delay-3 .menu-item__confirmation {
-    width: 11%;
+  .main .menu-container .menu-item__container .menu-item__delay-0 .menu-item__confirmation,
+.main .menu-container .menu-item__container .menu-item__delay-1 .menu-item__confirmation,
+.main .menu-container .menu-item__container .menu-item__delay-2 .menu-item__confirmation,
+.main .menu-container .menu-item__container .menu-item__delay-3 .menu-item__confirmation {
+    width: 20%;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -439,20 +459,24 @@ footer .footer-container .footer-container__list .fa-hands-helping {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .main .menu-container .menu-item__delay-3 {
+  .main .menu-container .menu-item__container {
     display: flex;
-    align-self: flex-end;
+    width: 100%;
+    height: 180px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .main .menu-container .menu-item__delay-0,
-.main .menu-container .menu-item__delay-1,
-.main .menu-container .menu-item__delay-2,
-.main .menu-container .menu-item__delay-3 {
-    width: 25%;
+  .main .menu-container .menu-item__container .menu-item__delay-0,
+.main .menu-container .menu-item__container .menu-item__delay-1,
+.main .menu-container .menu-item__container .menu-item__delay-2,
+.main .menu-container .menu-item__container .menu-item__delay-3 {
+    width: 26%;
   }
-  .main .menu-container .menu-item__delay-0 .menu-item__text,
-.main .menu-container .menu-item__delay-1 .menu-item__text,
-.main .menu-container .menu-item__delay-2 .menu-item__text,
-.main .menu-container .menu-item__delay-3 .menu-item__text {
+  .main .menu-container .menu-item__container .menu-item__delay-0 .menu-item__text,
+.main .menu-container .menu-item__container .menu-item__delay-1 .menu-item__text,
+.main .menu-container .menu-item__container .menu-item__delay-2 .menu-item__text,
+.main .menu-container .menu-item__container .menu-item__delay-3 .menu-item__text {
     width: 90%;
   }
 
